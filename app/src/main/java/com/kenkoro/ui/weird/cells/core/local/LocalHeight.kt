@@ -7,6 +7,7 @@ import androidx.compose.ui.unit.dp
 data class CellsGeneratorHeight(
   val topBar: Dp = 60.dp,
   val fab: Dp = 36.dp,
+  val item: Dp = 72.dp,
 )
 
 val LocalHeight = compositionLocalOf { CellsGeneratorHeight() }

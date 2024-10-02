@@ -5,7 +5,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 data class CellsGeneratorWidth(
-  val fab: Dp = 331.dp,
+  val standard: Dp = 331.dp,
+  val itemIcon: Dp = 40.dp,
 )
 
 val LocalWidth = compositionLocalOf { CellsGeneratorWidth() }

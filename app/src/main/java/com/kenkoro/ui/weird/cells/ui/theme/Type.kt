@@ -14,7 +14,6 @@ val Typography = Typography(
     fontSize = 16.sp,
     lineHeight = 24.sp,
     letterSpacing = 0.5.sp,
-    color = Color.White,
   ),
   bodyMedium = TextStyle(
     fontFamily = FontFamily.Default,
@@ -22,7 +21,6 @@ val Typography = Typography(
     fontSize = 20.sp,
     lineHeight = 26.sp,
     letterSpacing = 0.5.sp,
-    color = Color.White,
   ),
   bodySmall = TextStyle(
     fontFamily = FontFamily.Default,
@@ -30,6 +28,5 @@ val Typography = Typography(
     fontSize = 14.sp,
     lineHeight = 26.sp,
     letterSpacing = 0.5.sp,
-    color = Color.White,
   )
 )

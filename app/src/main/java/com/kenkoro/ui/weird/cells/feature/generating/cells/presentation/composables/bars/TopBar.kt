@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.kenkoro.ui.weird.cells.R
@@ -23,13 +24,14 @@ fun TopBar(modifier: Modifier = Modifier) {
     modifier = modifier
       .height(height.topBar)
       .fillMaxWidth()
-      .background(MaterialTheme.colorScheme.secondary),
+      .background(Color.Transparent),
     contentAlignment = Alignment.Center,
   ) {
     Text(
       text = stringResource(id = R.string.cells_generator_screen_top_bar_title),
       style = MaterialTheme.typography.bodyMedium,
-      )
+      color = Color.White,
+    )
   }
 }
 

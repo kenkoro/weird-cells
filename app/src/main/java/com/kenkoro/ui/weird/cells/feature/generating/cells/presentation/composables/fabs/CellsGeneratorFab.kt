@@ -23,7 +23,7 @@ fun CellsGeneratorFab(modifier: Modifier = Modifier) {
 
   FloatingActionButton(
     modifier = modifier
-      .size(width = width.fab, height = height.fab),
+      .size(width = width.standard, height = height.fab),
     onClick = { /*TODO*/ },
     containerColor = MaterialTheme.colorScheme.primary,
     shape = RoundedCornerShape(radius.fab),

@@ -2,4 +2,13 @@
     <string name="app_name">weird-cells</string>
     <string name="cells_generator_screen_top_bar_title">Клеточное наполнение</string>
     <string name="cells_generator_screen_fab_label">Сотворить</string>
+    <string name="dead_cell_icon">💀</string>
+    <string name="dead_cell_title">Мёртвая</string>
+    <string name="dead_cell_supporting_text">или прикидывается</string>
+    <string name="alive_cell_icon">💥</string>
+    <string name="alive_cell_title">Живая</string>
+    <string name="alive_cell_supporting_text">и шевелится!</string>
+    <string name="life_cell_icon">🐣</string>
+    <string name="life_cell_title">Жизнь</string>
+    <string name="life_cell_supporting_text">Ку-ку!</string>
 </resources>
