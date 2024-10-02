@@ -13,19 +13,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.kenkoro.ui.weird.cells.feature.generating.cells.presentation.composables.CellsGeneratorContent
 import com.kenkoro.ui.weird.cells.feature.generating.cells.presentation.composables.bars.TopBar
 import com.kenkoro.ui.weird.cells.feature.generating.cells.presentation.composables.fabs.CellsGeneratorFab
 import com.kenkoro.ui.weird.cells.ui.theme.WeirdCellsTheme
 
 @Composable
-fun CellsGeneratorScreen(
-  modifier: Modifier = Modifier,
-) {
+fun CellsGeneratorScreen(modifier: Modifier = Modifier) {
+  val viewModel: CellsGeneratorViewModel = viewModel()
+
   Scaffold(
     modifier = modifier,
     topBar = { TopBar() },
-    floatingActionButton = { CellsGeneratorFab() },
+    floatingActionButton = { CellsGeneratorFab(onPopulate = viewModel::populate) },
     floatingActionButtonPosition = FabPosition.Center,
   ) { innerPaddings ->
     Column(
@@ -42,7 +43,7 @@ fun CellsGeneratorScreen(
         .fillMaxSize(),
       horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-      CellsGeneratorContent()
+      CellsGeneratorContent(cells = viewModel.cells)
     }
   }
 }
