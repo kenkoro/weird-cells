@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">weird-cells</string>
+    <string name="cells_generator_screen_top_bar_title">Клеточное наполнение</string>
+    <string name="cells_generator_screen_fab_label">Сотворить</string>
 </resources>
