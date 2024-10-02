@@ -30,17 +30,20 @@ fun CellsGeneratorScreen(modifier: Modifier = Modifier) {
     floatingActionButtonPosition = FabPosition.Center,
   ) { innerPaddings ->
     Column(
-      modifier = Modifier
-        .background(
-          brush = Brush.verticalGradient(
-            colors = listOf(
-              MaterialTheme.colorScheme.secondary,
-              Color.Black,
-            ),
+      modifier =
+        Modifier
+          .background(
+            brush =
+              Brush.verticalGradient(
+                colors =
+                  listOf(
+                    MaterialTheme.colorScheme.secondary,
+                    Color.Black,
+                  ),
+              ),
           )
-        )
-        .padding(innerPaddings)
-        .fillMaxSize(),
+          .padding(innerPaddings)
+          .fillMaxSize(),
       horizontalAlignment = Alignment.CenterHorizontally,
     ) {
       CellsGeneratorContent(cells = viewModel.cells)

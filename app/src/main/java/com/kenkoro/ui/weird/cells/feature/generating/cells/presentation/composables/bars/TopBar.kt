@@ -1,7 +1,6 @@
 package com.kenkoro.ui.weird.cells.feature.generating.cells.presentation.composables.bars
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -22,10 +21,11 @@ fun TopBar(modifier: Modifier = Modifier) {
   val height = LocalHeight.current
 
   Box(
-    modifier = modifier
-      .height(height.topBar)
-      .fillMaxWidth()
-      .background(Color.Transparent),
+    modifier =
+      modifier
+        .height(height.topBar)
+        .fillMaxWidth()
+        .background(Color.Transparent),
     contentAlignment = Alignment.Center,
   ) {
     Text(

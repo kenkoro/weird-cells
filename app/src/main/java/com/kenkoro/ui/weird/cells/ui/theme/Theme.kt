@@ -11,16 +11,15 @@ import com.kenkoro.ui.weird.cells.core.local.LocalHeight
 import com.kenkoro.ui.weird.cells.core.local.LocalRadius
 import com.kenkoro.ui.weird.cells.core.local.LocalWidth
 
-private val LightColorScheme = lightColorScheme(
-  primary = primary,
-  secondary = secondary,
-  background = background,
-)
+private val LightColorScheme =
+  lightColorScheme(
+    primary = primary,
+    secondary = secondary,
+    background = background,
+  )
 
 @Composable
-fun WeirdCellsTheme(
-  content: @Composable () -> Unit
-) {
+fun WeirdCellsTheme(content: @Composable () -> Unit) {
   val colorScheme = LightColorScheme
 
   CompositionLocalProvider(

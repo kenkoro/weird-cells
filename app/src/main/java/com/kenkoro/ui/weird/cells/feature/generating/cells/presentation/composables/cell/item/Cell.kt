@@ -14,11 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.kenkoro.ui.weird.cells.R
 import com.kenkoro.ui.weird.cells.core.local.LocalWidth
 
 @Composable
@@ -31,14 +29,16 @@ fun Cell(
   val width = LocalWidth.current
 
   Box(
-    modifier = Modifier
-      .size(width.itemIcon)
-      .clip(CircleShape)
-      .background(
-        brush = Brush.verticalGradient(
-          colors = gradientColors,
-        )
-      ),
+    modifier =
+      Modifier
+        .size(width.itemIcon)
+        .clip(CircleShape)
+        .background(
+          brush =
+            Brush.verticalGradient(
+              colors = gradientColors,
+            ),
+        ),
     contentAlignment = Alignment.Center,
   ) {
     Text(text = icon)

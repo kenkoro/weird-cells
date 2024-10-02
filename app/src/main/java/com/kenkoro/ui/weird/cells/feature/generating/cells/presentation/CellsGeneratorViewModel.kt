@@ -7,6 +7,7 @@ import java.util.LinkedList
 
 class CellsGeneratorViewModel : ViewModel() {
   private val deadOrAliveCell = listOf(CellType.Dead, CellType.Alive)
+
   /**
    * Here, I use a linked list to reduce the time complexity of removeFirst() method - O(1). We
    * can also used a queue or something similar.

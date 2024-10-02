@@ -7,7 +7,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.res.stringResource
 import com.kenkoro.ui.weird.cells.R
 import com.kenkoro.ui.weird.cells.core.local.LocalHeight
@@ -24,8 +23,9 @@ fun CellsGeneratorFab(
   val radius = LocalRadius.current
 
   FloatingActionButton(
-    modifier = modifier
-      .size(width = width.standard, height = height.fab),
+    modifier =
+      modifier
+        .size(width = width.standard, height = height.fab),
     onClick = onPopulate,
     containerColor = MaterialTheme.colorScheme.primary,
     shape = RoundedCornerShape(radius.fab),

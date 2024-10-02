@@ -31,11 +31,12 @@ fun CellItem(
   val radius = LocalRadius.current
 
   Row(
-    modifier = modifier
-      .fillMaxWidth()
-      .height(height.item)
-      .clip(RoundedCornerShape(radius.item))
-      .background(Color.White),
+    modifier =
+      modifier
+        .fillMaxWidth()
+        .height(height.item)
+        .clip(RoundedCornerShape(radius.item))
+        .background(Color.White),
     verticalAlignment = Alignment.CenterVertically,
   ) {
     Spacer(modifier = Modifier.width(16.dp))
