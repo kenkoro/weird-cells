@@ -10,7 +10,7 @@ class CellsGeneratorViewModel : ViewModel() {
 
   /**
    * Here, I use a linked list to reduce the time complexity of removeFirst() method - O(1). We
-   * can also used a queue or something similar.
+   * could also use a queue or something similar.
    */
   private val threeLastCells = LinkedList<CellType>()
   val cells = mutableStateListOf<CellType>()
